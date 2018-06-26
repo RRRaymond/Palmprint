@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>register</title>
+	<meta charset="utf-8" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" name="viewport"/>
+  <link href="index.css" type="text/css" rel="stylesheet" />
+	<link href="register.css" type="text/css" rel="stylesheet" />
+	<script src="jquery-3.0.0.min.js"></script>
+	<script src="register.js"></script>
+</head>
+<body>
+  <h1>Register</h1>
+  <div id="boundary">
+    <div id="head">
+      <p>instruction</p>
+    </div>
+    <div id="main">
+      <form id="regForm">
+        <span>用户名</span><input type="text" id="ID" placeholder="请输入用户名">
+				<br/>
+				<span>密码</span><input type="password" name="pwd">
+				<br/>
+        <span>上传掌纹</span><input type="file" id="image">
+				<br/>
+        <button type="button" id="regBtn">注册</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

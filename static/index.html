@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>index</title>
+    <meta charset="utf-8" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"
+          name="viewport"/>
+    <link href="static/index.css" type="text/css" rel="stylesheet"/>
+    <script src="static/jquery-3.0.0.min.js"></script>
+    <script src="static/index.js"></script>
+</head>
+<body>
+<h1>Palm Print Detection</h1>
+<div id="boundary">
+    <div id="head">
+        <p>instruction</p>
+    </div>
+
+    <div id="main">
+        <form id="imgForm" enctype="multipart/form-data">
+            <span>用户名</span>
+            <input type="text" id="ID" placeholder="请输入用户名">
+            <br/>
+            <span>上传掌纹</span>
+            <input type="file" id="image"/>
+        </form>
+        <div id="btndiv">
+          <button id="submit">登录</button>
+          <button id="register" onclick="window.location.href='static/register.html'" >注册</button>
+          <br/>
+          <button id="open">打开摄像头</button>
+          <button id="snap">拍照</button>
+          <button id="upload">上传</button>
+        </div>
+          <video id="video" class="camera" width="640" height="480"></video>
+          <canvas id="canvas" class="camera" width="640" height="480"></canvas>
+    </div>
+    <!--
+    <div>
+        <button id="Login">登录</button>
+        <p id="result">result</p>
+    </div>
+    -->
+</div>
+
+</body>
+</html>
