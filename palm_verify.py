@@ -226,6 +226,11 @@ def login():
     return app.send_static_file('index.html')
 
 
+@app.route('/second')
+def register():
+    return app.send_static_file('register.html')
+
+
 @app.route('/testpost', methods=['POST'])
 def m_post():
     return request.form['a']

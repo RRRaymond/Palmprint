@@ -3,28 +3,40 @@
 <head>
 	<title>register</title>
 	<meta charset="utf-8" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" name="viewport"/>
-  <link href="index.css" type="text/css" rel="stylesheet" />
-	<link href="register.css" type="text/css" rel="stylesheet" />
-	<script src="jquery-3.0.0.min.js"></script>
-	<script src="register.js"></script>
+	<link href="static/register.css" type="text/css" rel="stylesheet" />
+	<script src="static/jquery-3.0.0.min.js"></script>
+	<script src="static/register.js"></script>
 </head>
 <body>
-  <h1>Register</h1>
-  <div id="boundary">
-    <div id="head">
-      <p>instruction</p>
-    </div>
-    <div id="main">
-      <form id="regForm">
-        <span>用户名</span><input type="text" id="ID" placeholder="请输入用户名">
+	<h1>Palm Print Register</h1>
+	<div id="boundary">
+		<div id="head">
+			<p>请注册账号。填写用户名、密码，并上传掌纹图片。<br/>可以上传本地图片，也可以拍照上传。</p>
+		</div>
+
+		<div id="main">
+			<form id="regForm" enctype="multipart/form-data">
+				<span class="text1">用户名</span>
 				<br/>
-				<span>密码</span><input type="password" name="pwd">
+				<input type="text" id="ID" placeholder="请输入用户名">
 				<br/>
-        <span>上传掌纹</span><input type="file" id="image">
+				<span class="text1">密码</span>
 				<br/>
-        <button type="button" id="regBtn">注册</button>
-      </form>
-    </div>
-  </div>
+				<input type="password" name="pwd">
+				<br/>
+				<span class="text1">上传掌纹</span>
+				<br/>
+				<input type="file" id="image" class="btn"/>
+				<button id="regBtn" class="btn">注册</button>
+			</form>
+			<div id="btndiv">
+				<button id="open" class="btn">打开摄像头</button>
+				<button id="snap" class="btn">拍照</button>
+				<button id="upload" class="btn">上传</button>
+			</div>
+			<video id="video" class="camera" width="640" height="480"></video>
+			<canvas id="canvas" class="camera" width="640" height="480"></canvas>
+		</div>
+	</div>
 </body>
 </html>

@@ -12,27 +12,29 @@
 <h1>Palm Print Detection</h1>
 <div id="boundary">
     <div id="head">
-        <p>instruction</p>
+        <p>检测前请先登录。输入用户名并上传掌纹图片。<br/>可以上传本地图片，也可以拍照上传。</p>
     </div>
 
     <div id="main">
         <form id="imgForm" enctype="multipart/form-data">
-            <span>用户名</span>
+            <span class="text1">用户名</span>
+            <br/>
             <input type="text" id="ID" placeholder="请输入用户名">
             <br/>
-            <span>上传掌纹</span>
+            <span class="text1">上传掌纹</span>
+            <br/>
             <input type="file" id="image"/>
+            <button id="submit" class="btn">登录</button>
+
+            <a href="https://baidu.com"><button id="register" class="btn">注册</button></a>
         </form>
         <div id="btndiv">
-          <button id="submit">登录</button>
-          <button id="register" onclick="window.location.href='static/register.html'" >注册</button>
-          <br/>
-          <button id="open">打开摄像头</button>
-          <button id="snap">拍照</button>
-          <button id="upload">上传</button>
+            <button id="open" class="btn">打开摄像头</button>
+            <button id="snap" class="btn">拍照</button>
+            <button id="upload" class="btn">上传</button>
         </div>
-          <video id="video" class="camera" width="640" height="480"></video>
-          <canvas id="canvas" class="camera" width="640" height="480"></canvas>
+        <video id="video" class="camera" width="640" height="480"></video>
+        <canvas id="canvas" class="camera" width="640" height="480"></canvas>
     </div>
     <!--
     <div>

@@ -1,6 +1,65 @@
+body {
+	font-family: Helvetica,Arial,monospace;
+	font-size: 12pt;
+	text-align: center;
+	background-color: #dcd5c5;
+}
+
+h1 {
+	color: #f0811a;
+	font-family: Arial;
+	font-size: 30pt;
+	text-shadow: 2px 2px gray;
+}
+
+#boundary {
+	background-color: #b6d1e6;
+	width: 96%;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px grey;
+	overflow: hidden;
+}
+
+.camera {
+	display: block;
+ 	border: 2px solid green;
+	margin: auto;
+}
+
+video {
+
+}
+
+#canvas {
+
+}
+
+#head {
+	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 #main {
-  width: 50%;
+  width: 96%;
   margin: auto;
-  height: 300px;
   text-align: left;
+	overflow: hidden;
+}
+
+#regForm {
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#btndiv {
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.text1 {
+	font-weight: bold;
 }

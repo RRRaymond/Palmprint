@@ -10,7 +10,15 @@ window.onload = function () {
     var context = canvas.getContext("2d");
     context.drawImage(video,0,0,640,480);
   });
+  document.getElementById("register").onclick = toregister;
 };
+
+function toregister() {
+    // alert("123");
+    window.location.href = '/second';
+    // window.open('/');
+    return false;
+}
 
 function open(){
   alert("open");
